@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Bold.ttf);
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}
+body{
+    background-color:black;
+}
+.cards{
+    display: block;
+    width: 70%;
+}
+.card{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    height: 175px;
+}
+.block-title{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 650px;
+    justify-content: space-between;
+    padding-left: 15px;
+    opacity: 0;
+    animation: ani-title 1.8s forwards;
+}
+.content-image{
+    width: 15%;
+}
+.card1{
+    background-color: rgb(255, 229, 0);
+    display: flex;
+    justify-content: space-between;
+}
+.card2{
+    background-color: rgb(55, 196, 237);
+    display: flex;
+    justify-content: space-between;
+}
+.card3{
+    background-color: rgb(255, 84, 254);
+}
+.block4{
+    background-color: rgb(255, 177, 255);
+    border-radius: 15px;
+}
+h1{
+    font-family: Anonymous Pro;
+    color: white;
+}
+h2{
+    font-family: Anonymous Pro;
+}
+h3{
+    font-family: Anonymous Pro;
+}
+.main-content{
+    display: flex;
+}
+.start{
+    display: block;
+    justify-content: left;
+    padding-right: 30px;
+    color: white;
+}
+.card{
+    justify-content: right;
+    width: 485px;
+    border-radius: 15px;
+    opacity: 0;
+    animation: ani-card 1.8s forwards;
+    margin-top: 22px;
+}
+.button__main{
+    background-color: white;
+    border-radius: 5px;
+    width: 237px;
+    margin-bottom: 10px;
+}
+input[type="text" i] {
+    border: 0;
+    outline: none;
+    width: 130px;
+    font-family: Anonymous Pro;
+    border-radius: 7px;
+    padding-left: 5px;
+}
+input[type="button" i] {
+    background-color: rgb(255, 84, 254);
+    color: white;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    margin: 1.5px;
+    font-family: Anonymous Pro;
+}
+.description{
+    font-size: 15px;
+}
+.block1{
+    padding-left: 10px;
+}
+.block21{
+    padding-left: 3px;
+}
+.img__card{
+    padding: 15px;
+    width: 150px;
+    border-radius: 20px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!-ANIMATION-!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.card{
+    overflow: hidden;
+    position: relative;
+    transition: all 300ms;
+}
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px white, 0 10px 10px white;
+}
+.img__card {
+    object-fit: cover;
+}
+@keyframes ani-card {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes ani-title {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!-ANIMATION-!!!!!!!!!!!!!!!!!!!!!!!!!! */
