@@ -10,4 +10,4 @@
 
 **Ссылка на проект**
 
-[Языки программированияа.](https://yataknemogy.github.io/hakaton-yandex/)
+[Языки программирования.](https://yataknemogy.github.io/hakaton-yandex/)
